@@ -1,8 +1,29 @@
-# React + Vite
+This is a simple Task list  App created using Vite and React.js. It allows users to create, manage, and organize their tasks in a user-friendly interface.
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+Features Add new tasks. Mark favorite tasks. Delete tasks that are no longer needed. Filter tasks based on their favorite tasks. Responsive design for optimal usage on various devices.
 
-Currently, two official plugins are available:
+Installation
+Clone the repository:
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react/README.md) uses [Babel](https://babeljs.io/) for Fast Refresh
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react-swc) uses [SWC](https://swc.rs/) for Fast Refresh
+git clone git@github.com:allenshamrock/task-list-app.git
+Navigate to the project directory:
+cd task-list
+Install dependencies using npm or yarn:
+npm install
+or
+
+yarn install
+Start the development server:
+npm run dev
+or
+
+yarn dev
+
+Technologies Used:
+Vite: A fast and opinionated build tool that provides a modern development environment.
+React.js: A JavaScript library for building user interfaces.
+React Hooks: Used for managing state and side effects in functional components.
+Vanilla CSS: Styling the components and providing a responsive design.
+
+Contributions
+Contributions to this project are welcome. Feel free to submit any bug fixes or feature enhancements by creating a pull request.
