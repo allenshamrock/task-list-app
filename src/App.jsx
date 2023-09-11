@@ -1,10 +1,11 @@
-import { useState,useEffect } from "react";
+import { useState, useEffect } from "react";
 import Header from "./components/Header";
 import Tasks from "./components/Tasks";
 function App() {
   const [todos, setTodos] = useState(null);
   const [isLoading, setIsLoading] = useState(false);
   const [isError, setIsError] = useState(null);
+
   useEffect(function () {
     setIsLoading(true);
     const fetchTodos = async () => {
@@ -23,15 +24,15 @@ function App() {
       .finally(() => setIsLoading(false));
   }, []);
 
-  if(isLoading){
-    return <h2>Loading...</h2>
+  if (isLoading) {
+    return <h2>Loading...</h2>;
   }
-  if(isError){
-    return <h2>{isError.message}</h2>
+  if (isError) {
+    return <h2>{isError.message}</h2>;
   }
   return (
     <main>
-      <Header todos={todos} setTodos={setTodos}/>
+      <Header todos={todos} setTodos={setTodos} />
       <Tasks todos={todos} setTodos={setTodos} />
     </main>
   );
